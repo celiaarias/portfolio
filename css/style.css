@@ -297,6 +297,7 @@ header{
     margin: 0;
     padding: 0 5px 0 0 ;
     float: left;
+    color:#2D2D2D;
     
 
 }
@@ -308,6 +309,10 @@ header{
     font-size: 1.3em;
 }
 
+
+.enlacessocial a:hover{
+    color: #777777;
+}
 .mockup{
     
     width: 80%;
@@ -423,15 +428,15 @@ header{
     padding-right: 1em;
 }
 
-.fab a{
+.iconossocial a{
     color: #777777;
 }
 
-.fab a:visited{
+.iconossocial a:visited{
     color: #777777;
 }
 
-.fab a:active{
+.iconossocial a:active{
     color: #777777;
 }
 
