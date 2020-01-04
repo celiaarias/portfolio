@@ -11,6 +11,7 @@
 h1, h2{
     font-family: 'Merriweather', serif;
     font-weight: 400;
+    color: black;
 }
 
 h2{
@@ -24,13 +25,31 @@ h3{
     padding-bottom: 30px;
 }
 
+h4{
+    font-family:'Merriweather', serif ;
+    color: black;
+    font-size: 1.4em;
+}
+
 .textoslargos{
     font-weight: 300;
     line-height: 1.7em;
 }
 
+.about{
+    color: #4E4E4E;
+    padding: 90px 0 50px 0;
+}
+
 /*** Estructura ***/
 
+aside{
+    width: 45px;
+    position: fixed;
+    right: 50px;
+    top: 85%;
+    z-index: 1;
+}
 body{
     margin: 0;
 }
@@ -55,12 +74,40 @@ body{
 
 
 }
+
+.aboutizquierda a{
+    line-height: 1.7em;
+    color: #4E4E4E;
+}
+
+.aboutizquierda a:hover{
+    color: rgb(123, 166, 216);
+}
 .aboutderecha{
     width: 60%;
 
 
 }
 
+.aboutderecha p{
+    line-height: 1.7em;
+}
+
+.fa-eye{
+    font-size:1.4em;
+}
+
+.fa-mobile-alt{
+    font-size:1.4em;
+}
+
+.fa-laptop{
+    font-size:1.4em;
+}
+
+.fa-pencil-alt{
+    font-size: 1.4em;
+}
 .anchototal{
     width: 100%;
     display: flex;
@@ -73,6 +120,7 @@ body{
     padding: 80px 0 60px 170px   ;
     color: #2D2D2D;
 }
+
 
 .proyectoux{
     width: 70%;
@@ -116,7 +164,7 @@ img{
 .fondo1{
 
     background-color: #CFDAE6 ;
-    padding:0; 
+    padding:50px 0; 
     margin:0;
     overflow: hidden;
     
@@ -267,9 +315,14 @@ header{
 
 .yo{
     height: 40vh;
-    background-image: url(../imagenes/);
+    background-image: url(../imagenes/yo.svg);
     background-size: cover;
     background-position: center;
+    
+}
+
+.yo a{
+    color: white;
 }
 
 #titulo{
@@ -315,7 +368,7 @@ header{
 }
 .mockup{
     
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 0%;
 
@@ -350,6 +403,10 @@ header{
     color: #777777;
     cursor: pointer;
 
+}
+
+.otrostrabajos li:hover{
+    color: rgb(123, 166, 216);
 }
 
 #allButton{
@@ -416,7 +473,20 @@ header{
 } */
 
 
+.casestudymedium{
+    text-align: center;
+    padding-bottom: 50px;
+}
 
+.karma img{
+    margin: 0;
+    padding: 0;
+}
+
+.video{
+   text-align: center;
+   margin-bottom: 50px;
+}
 
 #graphic, #web, #packaging, #product {
     display: none;
@@ -432,6 +502,12 @@ header{
     color: #777777;
 }
 
+.fab:hover{
+    color: rgb(123, 166, 216);
+    
+    
+}
+
 .iconossocial a:visited{
     color: #777777;
 }
@@ -439,6 +515,35 @@ header{
 .iconossocial a:active{
     color: #777777;
 }
+
+.button {
+    background-color:rgb(123, 166, 216) /* Green */
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .button1 {
+    background-color: white; 
+    color:rgb(99, 140, 187); 
+    border: 2px solid rgb(123, 166, 216);
+  }
+  
+  .button1:hover {
+    background-color:rgb(123, 166, 216);
+    color: white;
+  }
+
+
 
 /*** TAMAÑO MÓVIL ***/ 
 @media screen and (max-width: 414px) {
@@ -471,6 +576,26 @@ header{
         font-size: 1em;
     }
 
+
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .aboutizquierda{
+        width: 100%;
+        order: 1;
+    }
+
+    .aboutderecha{
+        width: 100%;
+    }
+
+    .fondo1{
+        padding: 0;
+    }
     .proyectoux{
         display: flex;
         flex-wrap: wrap;
@@ -549,6 +674,9 @@ header{
         width: 100%;        
     }
 
+    .video{
+        display: none;
+    }
 
 
     /* .overlayblack {
@@ -557,6 +685,17 @@ header{
         height: 26%;
         
         } */
+
+        .otrostrabajos li{
+            
+            padding: 0 7px;
+            
+        
+        }
+
+        .flecha{
+            display: none;
+        }
 }
 
 
@@ -590,6 +729,22 @@ header{
         height: 72%;
         
         } */
+
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .aboutizquierda{
+        width: 100%;
+        order: 1;
+    }
+
+    .aboutderecha{
+        width: 100%;
+    }
     
 }
 
