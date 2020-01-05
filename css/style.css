@@ -132,7 +132,7 @@ body{
     
 }
 
-.proyectoux a:visited{
+.mitad1 a:visited{
     color: #2D2D2D;
 }
 
@@ -314,8 +314,8 @@ header{
 }
 
 .yo{
-    height: 40vh;
-    background-image: url(../imagenes/yo.svg);
+    height: 45vh;
+    background-image: url(../imagenes/byn.jpg);
     background-size: cover;
     background-position: center;
     
@@ -455,6 +455,7 @@ header{
 
 
 
+
 /* .overlay-bg img{
     position: relative;
 }
@@ -582,8 +583,10 @@ header{
         flex-wrap: wrap;
         flex-direction: column;
         width: 80%;
+        padding: 50px 0 50px 0;
     }
 
+   
     .aboutizquierda{
         width: 100%;
         order: 1;
