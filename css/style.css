@@ -699,6 +699,13 @@ header{
         .flecha{
             display: none;
         }
+
+        .otrostrabajos li{
+            font-size: 0.9em;
+        }
+        nav .derecha a{
+            font-size: 1em;
+        }
 }
 
 
