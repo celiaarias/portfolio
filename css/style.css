@@ -133,11 +133,18 @@ body{
 }
 
 .mitad1 a:visited{
-    color: #2D2D2D;
+    color: #2D2D2D !important;
 }
 
+.mitad a:visited{
+    color: #2D2D2D !important;
+}
 .proyectoux a:hover{
     color: rgb(104, 104, 104);
+}
+
+.proyectoux a:visited{
+    color: #2D2D2D !important;
 }
 .mitad{
     width: 50%;
