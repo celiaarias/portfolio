@@ -1,8 +1,8 @@
-init_pointer({
-  pointerColor: "purple", // Css color
-  ringSize: 15, // Pixels
-  ringClickSize: 10 // Pixels when clicking
-})
+// init_pointer({
+//   pointerColor: "purple", // Css color
+//   ringSize: 15, // Pixels
+//   ringClickSize: 10 // Pixels when clicking
+// })
 
 function myFunction() {
     let graphicButton = document.getElementById("graphicButton");
@@ -179,17 +179,31 @@ function myFunction() {
 //     AOS.refresh();
 //     console.log(AOS)
 //   }
+
+
+var modal;
   
+document.addEventListener('click', function(e) {
+  if(e.target.className !== "imagen"){ return }
   
+  //console.log(e.target.className)
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  modal = document.getElementById("myModal");
+
+console.log(modal)
+
+  var imgModal = document.getElementById("imgModal");
+    e = e || window.event;
+    var target = e.target || e.srcElement,
+    text = target.textContent || target.innerText;   
+    //console.log(target.src);
+    modal.style.display = "block";
+    imgModal.src = target.src;
+  }, 
+false);
+ 
+var span = document.getElementsByClassName("close")[0];
+console.log(span)
+span.onclick = function() {
+  modal.style.display = "none";
+}  
